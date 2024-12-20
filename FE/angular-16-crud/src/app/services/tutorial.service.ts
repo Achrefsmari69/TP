@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 
-const baseUrl = 'https://achrefsmari.pythonanywhere.com/api/tutorials';
-const baseUrl1 = 'https://achrefsmari.pythonanywhere.com/api/tutorials/';
+const baseUrl = 'achrefsmari.pythonanywhere.com/api/tutorials';
+const baseUrl1 = 'achrefsmari.pythonanywhere.com/api/tutorials/';
 
 
 @Injectable({
