@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 
-const baseUrl = 'http://localhost:8080/api/tutorials';
-const baseUrl1 = 'http://localhost:8080/api/tutorials/';
+const baseUrl = 'https://achrefsmari.pythonanywhere.com/api/tutorials';
+const baseUrl1 = 'https://achrefsmari.pythonanywhere.com/api/tutorials/';
 
 
 @Injectable({
@@ -31,11 +31,11 @@ export class TutorialService {
   }
   
   delete(id: any): Observable<any> {
-    return this.http.delete(`${baseUrl}/${id}`);
+    return this.http.delete(`${baseUrl}/${id}/`);
   }
 
   deleteAll(): Observable<any> {
-    return this.http.delete(baseUrl);
+    return this.http.delete(baseUrl1);
   }
 
   findByTitle(title: any): Observable<Tutorial[]> {
